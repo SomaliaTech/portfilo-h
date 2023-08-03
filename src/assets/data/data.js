@@ -27,6 +27,6 @@ export default [
 {
     id: '6',
     link: "https://kasmal.com/",
-    img: "/images/6.png"
+    img: "/images/7.png"
 },
 ]
