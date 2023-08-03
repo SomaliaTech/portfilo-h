@@ -1,0 +1,139 @@
+.about{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+
+    .left{
+        flex: 1;
+        height: 100%;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .bg{
+            width: 60%;
+            height : 70vh;
+            background-color: #00A472;
+            border-radius: 30px;
+            position: absolute;
+            top: 150px;
+            left: 50px;
+        }
+        .card{
+            width: 60%;
+            height : 70vh;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 40px;
+                position: relative;
+            }
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+  
+        gap: 10px;
+        .title{
+            font-size: 44px;
+            font-weight: bold;
+        }
+        .desc{
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 300;
+        }
+        .continer{
+            display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+align-items: center;
+margin-top: 20px;
+.row{
+    background-color: #00A472;
+    color: white;
+    display: flex;
+    flex-direction: column;
+padding: 20px;
+width: 200px;
+justify-content: center;
+align-items: center;
+height: 120px;
+border-radius: 20px;
+cursor: pointer;
+gap: 10px;
+&:hover{
+    margin-top: -11px;
+    transition: all 0.5s ease-in;
+}
+.icon{
+    font-size: 22px;
+}
+}
+
+        }
+        // .desc2{
+        //     font-size: 22px;
+        //     line-height: 30px;
+        //     color: gray;
+        //     margin-top: 10px;
+        // }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        
+        height: 100%;
+        align-items: center;
+        padding: 20px;
+        .left{
+width: 100%;
+display: flex;
+ justify-content: center;
+ align-items: center;
+.bg{
+    display: none;
+}
+.card{
+    width: 100%;
+    padding: 20px;
+}
+        }
+        .right{
+            width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+            margin-top: 49px;
+
+            .title{
+font-size: 22px;
+
+
+            }
+            .desc{
+                font-size: 16px;
+                text-align: center;
+            }
+            .continer{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                .row{
+                    width: 280px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.p{
+    width: 30%;
+    border: solid 2px rgb(243,242,242);
+    height: 40vh;
+    overflow: hidden;
+    margin: 20px 10px;
+    border-radius: 10px 10px 0px 0px;
+
+    .p-browser{
+        display: flex;
+        align-items: center;
+        background-color: rgb(243,242,242);
+        height: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 11;
+        gap: 10px;
+        .p-circle{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 10px;
+        }
+    }
+    .pl-img{
+        width: 100%;
+ transition: all 10s ease;
+ &:hover{
+    transform: translateY(-100%);
+ }
+    }
+}
+
+@media screen and (max-width: 420px) {
+  .p{
+    width: 40%;
+    height: 20vh;
+    overflow: hidden;
+    margin: 10px;
+  }
+   }
